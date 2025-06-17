@@ -18,7 +18,7 @@ with app.app_context():
     db.session.add_all([p1, p2])
 
     rp1 = RestaurantPizza(price=10, restaurant=r1, pizza=p1)
-    rp2 = RestaurantPizza(price=12, restaurant=r1, pizza=p2)
+    rp2 = RestaurantPizza(price=12, restaurant=r2, pizza=p2)
     db.session.add_all([rp1, rp2])
 
     db.session.commit()
